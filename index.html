@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Data Generator</title>
+
+    <!-- Add Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- Add Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a class="nav-link" href="#random-user-container">Random User Data</a>
+        <a class="nav-link" href="#chuck-norris-container">Chuck Norris Joke</a>
+        <a class="nav-link" href="#picsum-image-container">Generate Image</a>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="main-container">
+        <!-- Random User Data -->
+        <div class="api-container" id="random-user-container">
+            <h2>Random User Data</h2>
+            <button class="btn btn-primary random-user-btn">Generate Random User Data</button>
+            <ul class="random-user-list">
+                <!-- Random user data will be populated here -->
+            </ul>
+        </div>
+
+        <!-- Chuck Norris Joke -->
+        <div class="api-container" id="chuck-norris-container" style="display: none;">
+            <h2>Chuck Norris Jokes</h2>
+            <button class="btn btn-primary chuck-norris-btn">Generate Chuck Norris Joke</button>
+            <div class="chuck-norris-joke">
+                <!-- Chuck Norris joke will be displayed here -->
+            </div>
+        </div>
+
+        <!-- Generate Image -->
+        <div class="api-container" id="picsum-image-container" style="display: none;">
+            <h2>Picsum Photos</h2>
+            <button class="btn btn-primary picsum-image-btn">Generate Image</button>
+            <img class="picsum-image" src="" alt="">
+            <div class="picsum-image-list">
+                <!-- Picsum Photos will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!-- Add Custom Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
